@@ -3,6 +3,14 @@
 
 @theme {
   --font-host: "Host Grotesk", sans-serif; /* To set as default sans-serif */
+
+  /* Map the weights you imported so classes like `font-bold` work */
+  --font-weight-light: 300;
+  --font-weight-normal: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+  --font-weight-extrabold: 800;
 }
 
 :root {
