@@ -30,17 +30,18 @@ const Register: React.FC = () => {
 
   return (
     <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-gray-900 via-gray-900 to-green-800 font-host">
-      <div className="xl:w-1/4 w-5/6 mx-auto mt-10 p-8 bg-white bg-opacity-90 rounded-xl shadow-lg">
-        <div className="w-full font-host flex items-center justify-center h-40  bg-gradient-to-bl from-gray-900 via-gray-900 to-green-800 text-white rounded-md p-8">
-          <div className="w-2/3 h-full font-extrabold xl:text-2xl text-sm">
-            Register and claim <strong className="text-green-500  font-host font-bold">$2,150</strong> by entering your promo code!
+      <img src="/src/assets/register/555.png" className="absolute  bottom-0 left-0 opacity-15 h-[50rem] w-[55rem] scale-x-[-1] z-10" />
+      <div className="xl:w-1/4 w-5/6 mx-auto mt-10 p-8 bg-white bg-opacity-90 rounded-xl shadow-lg z-20">
+        <div className="w-full font-host flex xl:flex-row flex-col items-center justify-center xl:h-48 h-52  bg-gradient-to-bl from-gray-900 via-gray-900 to-green-800 text-white rounded-md xl:p-8 p-4 ">
+          <div className="xl:w-2/3 w-full xl:h-full  font-extrabold xl:text-2xl text-lg xl:text-start text-center translate-y-10 xl:translate-y-0 ">
+            Register and claim your <strong className="text-green-500 font-host font-bold">$2,150</strong> by entering your promo code!
           </div>
-          <div className="w-1/3 h-full flex items-center justify-end">
-            <img src={"/src/assets/register/aa.webp"} className="object-cover h-32 w-32" />
+          <div className="xl:w-1/3 w-full xl:h-full  flex items-center xl:justify-end justify-center translate-y-4  xl:translate-y-0">
+            <img src={"/src/assets/register/aa.webp"} className="object-cover xl:h-32 h-40 xl:w-32 w-40" />
           </div>
         </div>
 
-        <form onSubmit={formik.handleSubmit} noValidate className="font-host">
+        <form onSubmit={formik.handleSubmit} noValidate className="font-host xl:text-base text-sm">
           {/* ...form fields unchanged... */}
           <div className="my-4">
             <label className="block text-gray-700 mb-1 font-semibold">Promo Code</label>
@@ -97,12 +98,12 @@ const Register: React.FC = () => {
 
           <button
             type="submit"
-            className="w-full hover:scale-105 cursor-pointer duration-500 py-3 bg-gradient-to-l from-green-800 to-gray-900 text-white font-host font-extrabold  rounded-md transition"
+            className="w-full xl:text-base text-sm hover:scale-105 cursor-pointer duration-500 py-3 bg-gradient-to-l from-green-800 to-gray-900 text-white font-host font-extrabold  rounded-md transition"
           >
             SIGN UP
           </button>
         </form>
-        <div className="mt-6 text-center">
+        <div className="mt-6 text-center xl:text-base text-sm">
           <span className="text-gray-700 font-black">Already have an account? </span>
           <p
             className="text-green-800 hover:underline bg-transparent border-none p-0 cursor-pointer font-extrabold"
