@@ -69,8 +69,8 @@ const Login: React.FC = () => {
               />
             </div>
 
-            <div className=" text-gray-500 cursor-pointer my-4">Forgot Password?</div>
-            <button type="submit" className="w-full  py-3 bg-gradient-to-l from-green-800 to-gray-900 text-white  font-extrabold  rounded-md transition">
+            <div className="text-gray-500 cursor-pointer my-4">Forgot Password?</div>
+            <button type="submit" className="w-full py-3 bg-gradient-to-l from-green-800 to-gray-900 hover:scale-105 text-white font-extrabold transition duration-500 cursor-pointer   rounded-md">
               SIGN IN
             </button>
           </form>

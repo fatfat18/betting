@@ -1,3 +1,6 @@
+import React from "react";
+import { useNavigate } from "react-router-dom";
+
 const featuredGames = [
   {
     name: "Football",
@@ -14,6 +17,7 @@ const featuredGames = [
 ];
 
 const Home: React.FC = () => {
+  const navigate = useNavigate();
   return (
     <div className="font-sans bg-gray-100 min-h-screen">
       {/* Header */}
@@ -21,7 +25,9 @@ const Home: React.FC = () => {
         <div className="max-w-4xl mx-auto px-4 flex flex-col items-center">
           <h1 className="text-5xl font-extrabold tracking-tight mb-2">BetMaster</h1>
           <p className="text-xl mb-6">Your #1 destination for sports betting!</p>
-          <button className="px-10 py-3 text-lg bg-yellow-400 text-[#1e2a38] rounded-full font-bold shadow hover:bg-yellow-500 transition duration-200">Join Now</button>
+          <button className="px-10 py-3 text-lg bg-yellow-400 text-[#1e2a38] rounded-full font-bold shadow hover:bg-yellow-500 transition duration-200" onClick={() => navigate("/register")}>
+            Join Now
+          </button>
         </div>
       </header>
 
