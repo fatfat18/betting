@@ -24,32 +24,15 @@ const games = [
 ];
 
 const Games: React.FC = () => (
-  <div style={{ padding: "2rem" }}>
-    <h1>Casino Games Gallery</h1>
-    <div
-      style={{
-        display: "grid",
-        gridTemplateColumns: "repeat(auto-fit, minmax(250px, 1fr))",
-        gap: "2rem",
-        marginTop: "2rem",
-      }}
-    >
+  <div className="p-8 mt-20">
+    <h1 className="text-3xl font-bold mb-8 text-center">Casino Games Gallery</h1>
+    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
       {games.map((game) => (
-        <div
-          key={game.name}
-          style={{
-            border: "1px solid #ddd",
-            borderRadius: "8px",
-            overflow: "hidden",
-            boxShadow: "0 2px 8px rgba(0,0,0,0.08)",
-            background: "#fff",
-            textAlign: "center",
-          }}
-        >
-          <img src={game.image} alt={game.name} style={{ width: "100%", height: "180px", objectFit: "cover" }} />
-          <div style={{ padding: "1rem" }}>
-            <h2 style={{ margin: "0 0 0.5rem 0" }}>{game.name}</h2>
-            <p style={{ color: "#555", fontSize: "0.95rem" }}>{game.description}</p>
+        <div key={game.name} className="border border-gray-200 rounded-lg overflow-hidden shadow bg-white text-center">
+          <img src={game.image} alt={game.name} className="w-full h-44 object-cover" />
+          <div className="p-4">
+            <h2 className="text-xl font-semibold mb-2">{game.name}</h2>
+            <p className="text-gray-600 text-base">{game.description}</p>
           </div>
         </div>
       ))}

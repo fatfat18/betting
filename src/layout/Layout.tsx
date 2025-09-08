@@ -3,10 +3,13 @@ import Navbar from "../components/Navbar";
 
 const Layout: React.FC<{ children: React.ReactNode }> = ({ children }) => {
   return (
-    <>
-      <Navbar />
-      <main>{children}</main>
-    </>
+    <div className="relative">
+      <div className="fixed top-0 left-0 w-full z-50  ">
+        {" "}
+        <Navbar />
+      </div>
+      {children}
+    </div>
   );
 };
 

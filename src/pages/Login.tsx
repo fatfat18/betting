@@ -71,7 +71,7 @@ const Login: React.FC = () => {
           </button>
         </form>
       </Modal>
-      <div className=" font-host min-h-screen bg-gradient-to-br from-gray-900 via-gray-900 to-green-800 flex items-center justify-center">
+      <div className="overflow-hidden font-host min-h-screen bg-gradient-to-br from-gray-900 via-gray-900 to-green-800 flex items-center justify-center">
         <div className="w-2/3 h-screen flex items-center justify-center p-20 relative ">
           <div className="absolute top-10 left-20 ">
             <img src="/src/assets/login/1.webp" alt="Logo" className=" w-h-80 h-80 -rotate-[15deg] " />
