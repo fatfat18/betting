@@ -32,12 +32,12 @@ const Register: React.FC = () => {
     <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-gray-900 via-gray-900 to-green-800 font-host">
       <img src="/src/assets/register/555.png" className="absolute  bottom-0 left-0 opacity-15 h-[50rem] w-[55rem] scale-x-[-1] z-10" />
       <div className="xl:w-1/4 w-5/6 mx-auto mt-10 p-8 bg-white bg-opacity-90 rounded-xl shadow-lg z-20">
-        <div className="w-full font-host flex xl:flex-row flex-col items-center justify-center xl:h-48 h-52  bg-gradient-to-bl from-gray-900 via-gray-900 to-green-800 text-white rounded-md xl:p-8 p-4 ">
-          <div className="xl:w-2/3 w-full xl:h-full  font-extrabold xl:text-2xl text-lg xl:text-start text-center translate-y-10 xl:translate-y-0 ">
-            Register and claim your <strong className="text-green-500 font-host font-bold">$2,150</strong> by entering your promo code!
+        <div className="w-full font-host flex xl:flex-row flex-col items-center justify-center xl:h-48 h-52  bg-gradient-to-bl from-gray-900 via-gray-900 to-green-800 text-white rounded-md xl:p-8 p-4 relative">
+          <div className="z-20 full w-full xl:h-full font-extrabold xl:text-3xl text-lg xl:text-start text-center translate-y-10 xl:translate-y-0 ">
+            Register and claim your <span className="text-green-400 font-host font-bold">$2,150</span> by entering your promo code!
           </div>
-          <div className="xl:w-1/3 w-full xl:h-full  flex items-center xl:justify-end justify-center translate-y-4  xl:translate-y-0">
-            <img src={"/src/assets/register/aa.webp"} className="object-cover xl:h-32 h-40 xl:w-32 w-40" />
+          <div className="z-10 absolute -bottom-7 -right-5 xl:p-4 p-2">
+            <img src={"/src/assets/register/aa.webp"} className="object-cover opacity-75  h-52  w-52" />
           </div>
         </div>
 
