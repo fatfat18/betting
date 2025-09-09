@@ -2,6 +2,12 @@ import React from "react";
 import { BsGift } from "react-icons/bs";
 import { useNavigate } from "react-router-dom";
 import { testimonies } from "../sample-data/home";
+import { FaBitcoin } from "react-icons/fa";
+import { FaEthereum } from "react-icons/fa";
+import { SiTether } from "react-icons/si";
+import { SiSolana } from "react-icons/si";
+import { RiXrpFill } from "react-icons/ri";
+import { SiDogecoin } from "react-icons/si";
 
 const Home: React.FC = () => {
   const navigate = useNavigate();
@@ -34,7 +40,7 @@ const Home: React.FC = () => {
   return (
     <>
       {/* SECTION1 */}
-      <div className="w-full h-screen overflow-x-hidden font-host bg-gradient-to-br from-gray-900 via-gray-900 to-green-800 flex  items-center justify-center text-white  relative overflow-hidden">
+      <div className="w-screen h-screen overflow-x-hidden font-host bg-gradient-to-br from-gray-900 via-gray-900 to-green-800 flex  items-center justify-center text-white  relative overflow-hidden">
         <img src="/src/assets/home/home2.webp" alt="Logo" className=" -left-[10rem] bottom-10 h-[50rem] blur-2xl absolute z-10 opacity-50 " />
 
         <div className="w-[40%]  flex flex-col gap-4 h-full  justify-center text-start pl-16 z-20">
@@ -99,7 +105,11 @@ const Home: React.FC = () => {
       </div>
 
       {/* SECTION3 */}
-      <div className="pt-40 w-full h-max bg-gradient-to-bl from-gray-900 via-gray-900 to-green-800 flex  flex-col  items-center justify-center text-white font-host relative overflow-hidden">
+      <div className="pt-40  w-screen h-max bg-gradient-to-bl from-gray-900 via-gray-900 to-green-800 flex  flex-col  items-center justify-center text-white font-host  overflow-hidden">
+        <div className="mb-4 w-full text-center ">
+          <div className="text-white font-black text-5xl">What Our Users Say</div>
+          <div className="text-zinc-400  mt-4">Discover real stories from our users who have experienced big wins and seamless betting with us.</div>
+        </div>{" "}
         <div className="w-full  flex items-center justify-center h-max  z-20">
           <div className="flex flex-wrap gap-8 p-4 w-full items-center justify-center overflow-x-auto scrollbar-thin scrollbar-thumb-green-700 scrollbar-track-gray-900">
             {testimonies.map((t, idx) => (
@@ -134,8 +144,43 @@ const Home: React.FC = () => {
 
       {/* SECTION4 */}
 
-      <div className="pt-40 w-screen h-screen bg-gradient-to-tl from-gray-900 via-gray-900 to-green-800 flex  flex-col  items-center justify-center text-white font-host relative overflow-hidden">
-        NEWSLETTER
+      <div className="pt-40 w-screen h-full bg-gradient-to-tl from-gray-900 via-gray-900 to-green-800 flex flex-col items-center justify-center text-white font-host relative overflow-hidden">
+        <div className="z-10 flex flex-col items-center gap-8 w-full max-w-6xl px-8 py-40 bg-gradient-to-br from-gray-950 via-gray-900 to-green-900 rounded-2xl shadow-xl">
+          <div className="text-5xl font-extrabold mb-4 text-center">Join Our Newsletter</div>
+          <div className="text-lg text-gray-300 text-center mb-6">Get the latest updates, exclusive offers, and tips delivered straight to your inbox.</div>
+          <form
+            className="w-full flex flex-col gap-4 items-center justify-center"
+            onSubmit={(e) => {
+              e.preventDefault();
+              // Add newsletter subscription logic here
+            }}
+          >
+            <input
+              type="email"
+              required
+              placeholder="Enter your email"
+              className="px-4 py-3 w-80 rounded-lg bg-gray-800 text-white border border-green-700 focus:outline-none focus:ring-2 focus:ring-green-400"
+            />
+            <button
+              type="submit"
+              className="px-8 py-3 w-80  bg-green-800 hover:bg-green-500 text-white text-lg font-bold rounded-lg shadow-lg transition duration-500 ease-in-out focus:outline-none focus:ring-2 focus:ring-green-400"
+            >
+              Subscribe
+            </button>
+          </form>
+          <div className="text-xs text-gray-400 text-center mt-2">We respect your privacy. Unsubscribe at any time.</div>
+        </div>
+        <div className="absolute bottom-0 right-5 opacity-10 text-[12rem] font-black text-green-900 select-none pointer-events-none">@</div>
+        <div className="my-8">© Copyright Reserved for ETHXpert 2026</div>
+
+        <div className="w-full flex items-start justify-center h-32  flex-wrap gap-20 z-0 opacity-80">
+          <FaBitcoin className="w-16 h-16 text-zinc-600" title="Bitcoin" />
+          <FaEthereum className="w-16 h-16 text-zinc-600" title="Ethereum" />
+          <SiTether className="w-16 h-16 text-zinc-600" title="Tether" />
+          <SiSolana className="w-16 h-16 text-zinc-600" title="Solana" />
+          <RiXrpFill className="w-16 h-16 text-zinc-600" title="XRP" />
+          <SiDogecoin className="w-16 h-16 text-zinc-600" title="Dogecoin" />
+        </div>
       </div>
     </>
   );

@@ -37,7 +37,7 @@ const Navbar: React.FC = () => {
             key={item.path}
             to={item.path}
             className={`  px-4 py-2 rounded-lg text-lg  flex items-center justify-center  ${
-              location.pathname === item.path ? " text-white shadow font-black" : "text-gray-300 hover:bg-gray-700 hover:text-white"
+              location.pathname === item.path ? " text-white  font-black" : "text-gray-300 hover:bg-gray-950 hover:text-white"
             }`}
           >
             {item?.label === "Live" && <GoDotFill className=" text-red-600 mr-1 animate-pulse" />}
@@ -54,7 +54,7 @@ const Navbar: React.FC = () => {
         </button>
         <button
           onClick={() => navigate("/login")}
-          className="flex items-center gap-3 px-8 py-2 rounded-md hover:bg-green-800   cursor-pointer bg-green-900 text-white  border-2 border-green-900 hover:text-white transition duration-500 ease-in-out "
+          className="flex items-center gap-3 px-8 py-2 rounded-md    cursor-pointer bg-gradient-to-br from-black via-gray-800 to-green-700 text-white   hover:text-white transition duration-500 ease-in-out "
         >
           LOGIN
         </button>

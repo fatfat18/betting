@@ -1,22 +1,5 @@
 export const testimonies = [
-    {
-        name: "Alice Johnson",
-        cryptoCoin: "Ethereum",
-        message:
-            "I've tried several betting platforms before, but this one truly stands out. The payouts are incredibly fast, and the odds are consistently better than what I've seen elsewhere. I feel confident placing my bets here and love how easy it is to use Ethereum for all my transactions.",
-        starRate: 5,
-        dateTime: "2024-06-01T14:30:00Z",
-        profileImage: "https://images.unsplash.com/photo-1511367461989-f85a21fda167?auto=format&fit=facearea&w=256&h=256&facepad=2",
-    },
-    {
-        name: "Brian Lee",
-        cryptoCoin: "Bitcoin",
-        message:
-            "This site makes betting with Bitcoin a breeze. The interface is straightforward and secure, which gives me peace of mind every time I log in. I’ve recommended it to several friends because it’s just so reliable and user-friendly.",
-        starRate: 4,
-        dateTime: "2024-05-28T09:15:00Z",
-        profileImage: "https://images.unsplash.com/photo-1508214751196-bcfd4ca60f91?auto=format&fit=facearea&w=256&h=256&facepad=2",
-    },
+
     {
         name: "Sofia Martinez",
         cryptoCoin: "Solana",
@@ -26,24 +9,8 @@ export const testimonies = [
         dateTime: "2024-05-20T18:45:00Z",
         profileImage: "https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=facearea&w=256&h=256&facepad=2",
     },
-    {
-        name: "Emily Chen",
-        cryptoCoin: "Litecoin",
-        message:
-            "I’m impressed by the wide selection of games and betting options available. Using Litecoin for deposits and withdrawals is super convenient, and I’ve never had any issues with delays or missing funds. Highly recommended for anyone who loves variety.",
-        starRate: 5,
-        dateTime: "2024-05-10T16:20:00Z",
-        profileImage: "https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?auto=format&fit=facearea&w=256&h=256&facepad=2",
-    },
-    {
-        name: "Carlos Rivera",
-        cryptoCoin: "Ethereum",
-        message:
-            "The bonuses and promotions for crypto users are fantastic! I’ve received several referral bonuses just for inviting friends, and the extra rewards make betting even more exciting. It’s great to see a platform that truly values its users.",
-        starRate: 5,
-        dateTime: "2024-05-08T13:10:00Z",
-        profileImage: "https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=facearea&w=256&h=256&facepad=2",
-    },
+
+   
     {
         name: "Mohammed Ali",
         cryptoCoin: "Solana",
@@ -62,15 +29,7 @@ export const testimonies = [
         dateTime: "2024-04-28T09:30:00Z",
         profileImage: "https://images.unsplash.com/photo-1541532713592-79a0317b6b77?auto=format&fit=facearea&w=256&h=256&facepad=2",
     },
-    {
-        name: "James Brown",
-        cryptoCoin: "Litecoin",
-        message:
-            "The odds offered here are some of the best I’ve found, and placing bets is straightforward. Using Litecoin makes transactions quick and hassle-free, and I appreciate how transparent everything is.",
-        starRate: 5,
-        dateTime: "2024-04-25T15:50:00Z",
-        profileImage: "https://images.unsplash.com/photo-1465101046530-73398c7f28ca?auto=format&fit=facearea&w=256&h=256&facepad=2",
-    },
+ 
     {
         name: "Mia Davis",
         cryptoCoin: "Solana",
@@ -105,7 +64,7 @@ export const testimonies = [
         dateTime: "2024-04-05T19:30:00Z",
         profileImage: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=facearea&w=256&h=256&facepad=2",
     },
-    // Added 5 less positive testimonies
+   
 
  
     {

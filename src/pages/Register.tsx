@@ -30,7 +30,7 @@ const Register: React.FC = () => {
 
   return (
     <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-gray-900 via-gray-900 to-green-800 font-host">
-      <img src="/src/assets/register/555.png" className="absolute  bottom-0 left-0 opacity-15 h-[50rem] w-[55rem] scale-x-[-1] z-10" />
+      <img src="/src/assets/register/555.png" className="absolute  bottom-0 left-0 opacity-30 h-[50rem] w-[50rem] scale-x-[-1] z-10" />
       <div className="xl:w-1/4 w-5/6 mx-auto mt-10 p-8 bg-white bg-opacity-90 rounded-xl shadow-lg z-20">
         <div className="w-full font-host flex xl:flex-row flex-col items-center justify-center xl:h-48 h-52  bg-gradient-to-bl from-gray-900 via-gray-900 to-green-800 text-white rounded-md xl:p-8 p-4 relative">
           <div className="z-20 full w-full xl:h-full font-extrabold xl:text-3xl text-lg xl:text-start text-center translate-y-10 xl:translate-y-0 ">

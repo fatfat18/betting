@@ -3,6 +3,9 @@ import Home from "./pages/Home";
 import Games from "./pages/Games";
 import Login from "./pages/Login";
 import Register from "./pages/Register";
+import Live from "./pages/Live";
+import About from "./pages/About";
+import Rewards from "./pages/Rewards";
 import "./App.css";
 import Layout from "./layout/Layout";
 import { UNAUTH_ROUTES } from "./constants/routes.constants";
@@ -14,6 +17,10 @@ function getRouteWithLayout(path: string, element: React.ReactNode) {
 const routeConfig = [
   { path: UNAUTH_ROUTES.HOME, element: <Home /> },
   { path: UNAUTH_ROUTES.GAMES, element: <Games /> },
+  { path: UNAUTH_ROUTES.LIVE, element: <Live /> },
+  { path: UNAUTH_ROUTES.ABOUT, element: <About /> },
+  { path: UNAUTH_ROUTES.REWARDS, element: <Rewards /> },
+
   { path: UNAUTH_ROUTES.LOGIN, element: <Login /> },
   { path: UNAUTH_ROUTES.REGISTER, element: <Register /> },
 ];
