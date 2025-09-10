@@ -2,12 +2,7 @@ import React from "react";
 import { BsGift } from "react-icons/bs";
 import { useNavigate } from "react-router-dom";
 import { testimonies } from "../sample-data/home";
-import { FaBitcoin } from "react-icons/fa";
-import { FaEthereum } from "react-icons/fa";
-import { SiTether } from "react-icons/si";
-import { SiSolana } from "react-icons/si";
-import { RiXrpFill } from "react-icons/ri";
-import { SiDogecoin } from "react-icons/si";
+import Footer from "../components/Footer";
 
 const Home: React.FC = () => {
   const navigate = useNavigate();
@@ -171,16 +166,8 @@ const Home: React.FC = () => {
           <div className="text-xs text-gray-400 text-center mt-2">We respect your privacy. Unsubscribe at any time.</div>
         </div>
         <div className="absolute bottom-0 right-5 opacity-10 text-[12rem] font-black text-green-900 select-none pointer-events-none">@</div>
-        <div className="my-8">© Copyright Reserved for ETHXpert 2026</div>
 
-        <div className="w-full flex items-start justify-center h-32  flex-wrap gap-20 z-0 opacity-80">
-          <FaBitcoin className="w-16 h-16 text-zinc-600" title="Bitcoin" />
-          <FaEthereum className="w-16 h-16 text-zinc-600" title="Ethereum" />
-          <SiTether className="w-16 h-16 text-zinc-600" title="Tether" />
-          <SiSolana className="w-16 h-16 text-zinc-600" title="Solana" />
-          <RiXrpFill className="w-16 h-16 text-zinc-600" title="XRP" />
-          <SiDogecoin className="w-16 h-16 text-zinc-600" title="Dogecoin" />
-        </div>
+        <Footer />
       </div>
     </>
   );
