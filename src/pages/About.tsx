@@ -17,25 +17,33 @@ const aboutSections = [
 
 const About: React.FC = () => {
   return (
-    <div className="max-w-5xl mx-auto p-8 mt-16 bg-gradient-to-br from-blue-50 to-green-50 rounded-xl shadow-lg">
+    <div className="w-screen h-screen p-8 pt-28 bg-gradient-to-br bg-gray-900 via-gray-900 to-green-800 ">
       <div className="mb-12 text-center">
-        <h1 className="text-4xl font-extrabold text-blue-700 mb-4">About ETHXpert</h1>
-        <p className="text-lg text-gray-700">Discover our platform and enjoy live betting games!</p>
+        <h1 className="text-4xl font-black text-white mb-4">Who we are?</h1>
+        <p className="text-lg text-zinc-400">Discover our platform and enjoy live betting games!</p>
       </div>
+      <div className="flex justify-center  w-full  ">
+        <div className="flex items-center justify-center  w-full h-full">
+          {" "}
+          <img src="/src/assets/about/about-2.png" className="w-[20rem] h-[20rem] -rotate-30" />
+        </div>{" "}
+        <div className="flex items-center justify-center  w-full h-full">
+          {" "}
+          <img src="/src/assets/about/about-1.png" className="w-[30rem] h-[30rem]" />
+        </div>{" "}
+        <div className="flex items-center justify-center  w-full h-full">
+          {" "}
+          <img src="/src/assets/about/about-2.png" className="w-[20rem] h-[20rem] rotate-30" />
+        </div>{" "}
+      </div>
+
       <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
         {aboutSections.map((section) => (
           <div key={section.title} className="bg-white rounded-lg shadow p-6">
-            <h2 className="text-xl font-bold text-green-700 mb-2">{section.title}</h2>
+            <h2 className="text-xl text-green-800 font-black mb-2">{section.title}</h2>
             <p className="text-gray-600">{section.content}</p>
           </div>
         ))}
-      </div>
-      <div className="mt-10 text-center">
-        <h2 className="text-2xl font-semibold text-green-700 mb-4">Ready to Play?</h2>
-        <p className="text-gray-700 mb-6">Join our live betting games and experience the excitement!</p>
-        <a href="/games" className="inline-block px-6 py-3 bg-blue-600 text-white rounded-full font-bold shadow hover:bg-blue-700 transition">
-          Go to Live Games
-        </a>
       </div>
     </div>
   );
