@@ -4,7 +4,7 @@ import { SiTether, SiSolana, SiDogecoin } from "react-icons/si";
 import { RiXrpFill } from "react-icons/ri";
 
 const Footer: React.FC = () => (
-  <footer className="w-screen flex flex-col items-center mt-10">
+  <footer className="w-full flex flex-col items-center mt-10">
     <div className="my-8 text-zinc-400">© Copyright Reserved for ETHXpert 2026</div>
     <div className="w-full flex items-start justify-center h-32 flex-wrap gap-20 z-0 opacity-80">
       <FaBitcoin className="w-16 h-16 text-zinc-600" title="Bitcoin" />

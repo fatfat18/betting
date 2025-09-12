@@ -48,20 +48,54 @@ const Games: React.FC = () => (
 
       <div className="w-full overflow-x-auto ">
         <div className="w-max h-full flex gap-6">
-          <div className=" w-60 h-80 transition-colors duration-500 bg-radial to-black hover:via-black from-amber-900 rounded-md flex items-center justify-center text-3xl font-bold">Poker</div>
-          <div className=" w-60 h-80 transition-colors duration-500 bg-radial to-black hover:via-black from-green-900 rounded-md flex items-center justify-center text-3xl font-bold">Blackjack</div>
-          <div className=" w-60 h-80 transition-colors duration-500 bg-radial to-black hover:via-black from-purple-900 rounded-md flex items-center justify-center text-3xl font-bold">Baccarat</div>
-          <div className=" w-60 h-80 transition-colors duration-500 bg-radial to-black hover:via-black from-blue-900 rounded-md flex items-center justify-center text-3xl font-bold">Solitaire</div>
-          <div className=" w-60 h-80 transition-colors duration-500 bg-radial to-black hover:via-black from-pink-900 rounded-md flex items-center justify-center text-3xl font-bold">Rummy</div>
-          <div className=" w-60 h-80 transition-colors duration-500 bg-radial to-black hover:via-black from-red-900 rounded-md flex items-center justify-center text-3xl font-bold">Bridge</div>
-          <div className=" w-60 h-80 transition-colors duration-500 bg-radial to-black hover:via-black from-cyan-900 rounded-md flex items-center justify-center text-3xl font-bold">Hearts</div>
-          <div className=" w-60 h-80 transition-colors duration-500 bg-radial to-black hover:via-black from-lime-900 rounded-md flex items-center justify-center text-3xl font-bold">Spades</div>
-          <div className=" w-60 h-80 transition-colors duration-500 bg-radial to-black hover:via-black from-teal-900 rounded-md flex items-center justify-center text-3xl font-bold">Euchre</div>
-          <div className=" w-60 h-80 transition-colors duration-500 bg-radial to-black hover:via-black from-orange-900 rounded-md flex items-center justify-center text-3xl font-bold">Go Fish</div>
-          <div className=" w-60 h-80 transition-colors duration-500 bg-radial to-black hover:via-black from-yellow-900 rounded-md flex items-center justify-center text-3xl font-bold">
-            Crazy Eights
+          <div className="relative w-60 h-80 transition-colors duration-500 bg-radial to-black hover:via-black from-amber-900 rounded-md flex items-center justify-center text-3xl font-bold">
+            <img src="/src/assets/games/cards.png" className="absolute w-48 h-48 z-10 opacity-10" />
+            <span className="z-20">Poker</span>
           </div>
-          <div className=" w-60 h-80 transition-colors duration-500 bg-radial to-black hover:via-black from-gray-900 rounded-md flex items-center justify-center text-3xl font-bold">War</div>
+          <div className="relative w-60 h-80 transition-colors duration-500 bg-radial to-black hover:via-black from-green-900 rounded-md flex items-center justify-center text-3xl font-bold">
+            <img src="/src/assets/games/cards.png" className="absolute w-48 h-48 z-10 opacity-10" />
+            <span className="z-20">Blackjack</span>
+          </div>
+          <div className="relative w-60 h-80 transition-colors duration-500 bg-radial to-black hover:via-black from-purple-900 rounded-md flex items-center justify-center text-3xl font-bold">
+            <img src="/src/assets/games/cards.png" className="absolute w-48 h-48 z-10 opacity-10" />
+            <span className="z-20">Baccarat</span>
+          </div>
+          <div className="relative w-60 h-80 transition-colors duration-500 bg-radial to-black hover:via-black from-blue-900 rounded-md flex items-center justify-center text-3xl font-bold">
+            <img src="/src/assets/games/cards.png" className="absolute w-48 h-48 z-10 opacity-10" />
+            <span className="z-20">Solitaire</span>
+          </div>
+          <div className="relative w-60 h-80 transition-colors duration-500 bg-radial to-black hover:via-black from-pink-900 rounded-md flex items-center justify-center text-3xl font-bold">
+            <img src="/src/assets/games/cards.png" className="absolute w-48 h-48 z-10 opacity-10" />
+            <span className="z-20">Rummy</span>
+          </div>
+          <div className="relative w-60 h-80 transition-colors duration-500 bg-radial to-black hover:via-black from-red-900 rounded-md flex items-center justify-center text-3xl font-bold">
+            <img src="/src/assets/games/cards.png" className="absolute w-48 h-48 z-10 opacity-10" />
+            <span className="z-20">Bridge</span>
+          </div>
+          <div className="relative w-60 h-80 transition-colors duration-500 bg-radial to-black hover:via-black from-cyan-900 rounded-md flex items-center justify-center text-3xl font-bold">
+            <img src="/src/assets/games/cards.png" className="absolute w-48 h-48 z-10 opacity-10" />
+            <span className="z-20">Hearts</span>
+          </div>
+          <div className="relative w-60 h-80 transition-colors duration-500 bg-radial to-black hover:via-black from-lime-900 rounded-md flex items-center justify-center text-3xl font-bold">
+            <img src="/src/assets/games/cards.png" className="absolute w-48 h-48 z-10 opacity-10" />
+            <span className="z-20">Spades</span>
+          </div>
+          <div className="relative w-60 h-80 transition-colors duration-500 bg-radial to-black hover:via-black from-teal-900 rounded-md flex items-center justify-center text-3xl font-bold">
+            <img src="/src/assets/games/cards.png" className="absolute w-48 h-48 z-10 opacity-10" />
+            <span className="z-20">Euchre</span>
+          </div>
+          <div className="relative w-60 h-80 transition-colors duration-500 bg-radial to-black hover:via-black from-orange-900 rounded-md flex items-center justify-center text-3xl font-bold">
+            <img src="/src/assets/games/cards.png" className="absolute w-48 h-48 z-10 opacity-10" />
+            <span className="z-20">Go Fish</span>
+          </div>
+          <div className="relative w-60 h-80 transition-colors duration-500 bg-radial to-black hover:via-black from-yellow-900 rounded-md flex items-center justify-center text-3xl font-bold">
+            <img src="/src/assets/games/cards.png" className="absolute w-48 h-48 z-10 opacity-10" />
+            <span className="z-20">Crazy Eights</span>
+          </div>
+          <div className="relative w-60 h-80 transition-colors duration-500 bg-radial to-black hover:via-black from-gray-900 rounded-md flex items-center justify-center text-3xl font-bold">
+            <img src="/src/assets/games/cards.png" className="absolute w-48 h-48 z-10 opacity-10" />
+            <span className="z-20">War</span>
+          </div>
         </div>
       </div>
     </div>
@@ -74,41 +108,53 @@ const Games: React.FC = () => (
 
       <div className="w-full overflow-x-auto ">
         <div className="w-max h-full flex gap-6">
-          <div className="w-60 h-80 transition-colors duration-500 ease-linear hover:bg-gradient-to-b bg-gradient-to-b from-gray-950 via-gray-950 hover:via-amber-500 to-amber-500 rounded-md flex items-center justify-center text-3xl font-bold">
-            Football
+          <div className="relative w-60 h-80 transition-colors duration-500 ease-linear bg-gradient-to-b from-gray-950 via-gray-950 hover:via-amber-500 to-amber-500 rounded-md flex items-center justify-center text-3xl font-bold">
+            <img src="/src/assets/games/soccer.webp" className="absolute w-48 h-48 z-10 opacity-10" />
+            <span className="z-20">Football</span>
           </div>
-          <div className="w-60 h-80 transition-colors duration-500 ease-linear hover:bg-gradient-to-b bg-gradient-to-b from-gray-950 via-gray-950 hover:via-green-500 to-green-500 rounded-md flex items-center justify-center text-3xl font-bold">
-            Basketball
+          <div className="relative w-60 h-80 transition-colors duration-500 ease-linear bg-gradient-to-b from-gray-950 via-gray-950 hover:via-green-500 to-green-500 rounded-md flex items-center justify-center text-3xl font-bold">
+            <img src="/src/assets/games/soccer.webp" className="absolute w-48 h-48 z-10 opacity-10" />
+            <span className="z-20">Basketball</span>
           </div>
-          <div className="w-60 h-80 transition-colors duration-500 ease-linear hover:bg-gradient-to-b bg-gradient-to-b from-gray-950 via-gray-950 hover:via-blue-500 to-blue-500 rounded-md flex items-center justify-center text-3xl font-bold">
-            Baseball
+          <div className="relative w-60 h-80 transition-colors duration-500 ease-linear bg-gradient-to-b from-gray-950 via-gray-950 hover:via-blue-500 to-blue-500 rounded-md flex items-center justify-center text-3xl font-bold">
+            <img src="/src/assets/games/soccer.webp" className="absolute w-48 h-48 z-10 opacity-10" />
+            <span className="z-20">Baseball</span>
           </div>
-          <div className="w-60 h-80 transition-colors duration-500 ease-linear hover:bg-gradient-to-b bg-gradient-to-b from-gray-950 via-gray-950 hover:via-red-500 to-red-500 rounded-md flex items-center justify-center text-3xl font-bold">
-            Tennis
+          <div className="relative w-60 h-80 transition-colors duration-500 ease-linear bg-gradient-to-b from-gray-950 via-gray-950 hover:via-red-500 to-red-500 rounded-md flex items-center justify-center text-3xl font-bold">
+            <img src="/src/assets/games/soccer.webp" className="absolute w-48 h-48 z-10 opacity-10" />
+            <span className="z-20">Tennis</span>
           </div>
-          <div className="w-60 h-80 transition-colors duration-500 ease-linear hover:bg-gradient-to-b bg-gradient-to-b from-gray-950 via-gray-950 hover:via-purple-500 to-purple-500 rounded-md flex items-center justify-center text-3xl font-bold">
-            Golf
+          <div className="relative w-60 h-80 transition-colors duration-500 ease-linear bg-gradient-to-b from-gray-950 via-gray-950 hover:via-purple-500 to-purple-500 rounded-md flex items-center justify-center text-3xl font-bold">
+            <img src="/src/assets/games/soccer.webp" className="absolute w-48 h-48 z-10 opacity-10" />
+            <span className="z-20">Golf</span>
           </div>
-          <div className="w-60 h-80 transition-colors duration-500 ease-linear hover:bg-gradient-to-b bg-gradient-to-b from-gray-950 via-gray-950 hover:via-pink-500 to-pink-500 rounded-md flex items-center justify-center text-3xl font-bold">
-            Boxing
+          <div className="relative w-60 h-80 transition-colors duration-500 ease-linear bg-gradient-to-b from-gray-950 via-gray-950 hover:via-pink-500 to-pink-500 rounded-md flex items-center justify-center text-3xl font-bold">
+            <img src="/src/assets/games/soccer.webp" className="absolute w-48 h-48 z-10 opacity-10" />
+            <span className="z-20">Boxing</span>
           </div>
-          <div className="w-60 h-80 transition-colors duration-500 ease-linear hover:bg-gradient-to-b bg-gradient-to-b from-gray-950 via-gray-950 hover:via-cyan-500 to-cyan-500 rounded-md flex items-center justify-center text-3xl font-bold">
-            Cricket
+          <div className="relative w-60 h-80 transition-colors duration-500 ease-linear bg-gradient-to-b from-gray-950 via-gray-950 hover:via-cyan-500 to-cyan-500 rounded-md flex items-center justify-center text-3xl font-bold">
+            <img src="/src/assets/games/soccer.webp" className="absolute w-48 h-48 z-10 opacity-10" />
+            <span className="z-20">Cricket</span>
           </div>
-          <div className="w-60 h-80 transition-colors duration-500 ease-linear hover:bg-gradient-to-b bg-gradient-to-b from-gray-950 via-gray-950 hover:via-lime-500 to-lime-500 rounded-md flex items-center justify-center text-3xl font-bold">
-            Rugby
+          <div className="relative w-60 h-80 transition-colors duration-500 ease-linear bg-gradient-to-b from-gray-950 via-gray-950 hover:via-lime-500 to-lime-500 rounded-md flex items-center justify-center text-3xl font-bold">
+            <img src="/src/assets/games/soccer.webp" className="absolute w-48 h-48 z-10 opacity-10" />
+            <span className="z-20">Rugby</span>
           </div>
-          <div className="w-60 h-80 transition-colors duration-500 ease-linear hover:bg-gradient-to-b bg-gradient-to-b from-gray-950 via-gray-950 hover:via-teal-500 to-teal-500 rounded-md flex items-center justify-center text-3xl font-bold">
-            Hockey
+          <div className="relative w-60 h-80 transition-colors duration-500 ease-linear bg-gradient-to-b from-gray-950 via-gray-950 hover:via-teal-500 to-teal-500 rounded-md flex items-center justify-center text-3xl font-bold">
+            <img src="/src/assets/games/soccer.webp" className="absolute w-48 h-48 z-10 opacity-10" />
+            <span className="z-20">Hockey</span>
           </div>
-          <div className="w-60 h-80 transition-colors duration-500 ease-linear hover:bg-gradient-to-b bg-gradient-to-b from-gray-950 via-gray-950 hover:via-orange-500 to-orange-500 rounded-md flex items-center justify-center text-3xl font-bold">
-            MMA
+          <div className="relative w-60 h-80 transition-colors duration-500 ease-linear bg-gradient-to-b from-gray-950 via-gray-950 hover:via-orange-500 to-orange-500 rounded-md flex items-center justify-center text-3xl font-bold">
+            <img src="/src/assets/games/soccer.webp" className="absolute w-48 h-48 z-10 opacity-10" />
+            <span className="z-20">MMA</span>
           </div>
-          <div className="w-60 h-80 transition-colors duration-500 ease-linear hover:bg-gradient-to-b bg-gradient-to-b from-gray-950 via-gray-950 hover:via-gray-500 to-gray-500 rounded-md flex items-center justify-center text-3xl font-bold">
-            Motorsport
+          <div className="relative w-60 h-80 transition-colors duration-500 ease-linear bg-gradient-to-b from-gray-950 via-gray-950 hover:via-gray-500 to-gray-500 rounded-md flex items-center justify-center text-3xl font-bold">
+            <img src="/src/assets/games/soccer.webp" className="absolute w-48 h-48 z-10 opacity-10" />
+            <span className="z-20">Motorsport</span>
           </div>
-          <div className="w-60 h-80 transition-colors duration-500 ease-linear hover:bg-gradient-to-b bg-gradient-to-b from-gray-950 via-gray-950 hover:via-yellow-500 to-yellow-500 rounded-md flex items-center justify-center text-3xl font-bold">
-            Horse Racing
+          <div className="relative w-60 h-80 transition-colors duration-500 ease-linear bg-gradient-to-b from-gray-950 via-gray-950 hover:via-yellow-500 to-yellow-500 rounded-md flex items-center justify-center text-3xl font-bold">
+            <img src="/src/assets/games/soccer.webp" className="absolute w-48 h-48 z-10 opacity-10" />
+            <span className="z-20">Horse Racing</span>
           </div>
         </div>
       </div>
@@ -122,41 +168,53 @@ const Games: React.FC = () => (
 
       <div className="w-full overflow-x-auto ">
         <div className="w-max h-full flex gap-6">
-          <div className="w-60 h-80 transition-colors duration-500 ease-linear bg-gradient-to-br from-gray-950 via-gray-950 hover:via-cyan-300 to-cyan-300 rounded-md flex items-center justify-center text-3xl font-bold">
-            Slots
+          <div className="relative w-60 h-80 transition-colors duration-500 ease-linear bg-gradient-to-br from-gray-950 via-gray-950 hover:via-cyan-300 to-cyan-300 rounded-md flex items-center justify-center text-3xl font-bold">
+            <img src="/src/assets/games/slot.webp" className="absolute w-48 h-48 z-10 opacity-10" />
+            <span className="z-20">Slots</span>
           </div>
-          <div className="w-60 h-80 transition-colors duration-500 ease-linear bg-gradient-to-br from-gray-950 via-gray-950 hover:via-red-300 to-red-300 rounded-md flex items-center justify-center text-3xl font-bold">
-            Roulette
+          <div className="relative w-60 h-80 transition-colors duration-500 ease-linear bg-gradient-to-br from-gray-950 via-gray-950 hover:via-red-300 to-red-300 rounded-md flex items-center justify-center text-3xl font-bold">
+            <img src="/src/assets/games/slot.webp" className="absolute w-48 h-48 z-10 opacity-10" />
+            <span className="z-20">Roulette</span>
           </div>
-          <div className="w-60 h-80 transition-colors duration-500 ease-linear bg-gradient-to-br from-gray-950 via-gray-950 hover:via-green-300 to-green-300 rounded-md flex items-center justify-center text-3xl font-bold">
-            Blackjack
+          <div className="relative w-60 h-80 transition-colors duration-500 ease-linear bg-gradient-to-br from-gray-950 via-gray-950 hover:via-green-300 to-green-300 rounded-md flex items-center justify-center text-3xl font-bold">
+            <img src="/src/assets/games/slot.webp" className="absolute w-48 h-48 z-10 opacity-10" />
+            <span className="z-20">Blackjack</span>
           </div>
-          <div className="w-60 h-80 transition-colors duration-500 ease-linear bg-gradient-to-br from-gray-950 via-gray-950 hover:via-yellow-300 to-yellow-300 rounded-md flex items-center justify-center text-3xl font-bold">
-            Craps
+          <div className="relative w-60 h-80 transition-colors duration-500 ease-linear bg-gradient-to-br from-gray-950 via-gray-950 hover:via-yellow-300 to-yellow-300 rounded-md flex items-center justify-center text-3xl font-bold">
+            <img src="/src/assets/games/slot.webp" className="absolute w-48 h-48 z-10 opacity-10" />
+            <span className="z-20">Craps</span>
           </div>
-          <div className="w-60 h-80 transition-colors duration-500 ease-linear bg-gradient-to-br from-gray-950 via-gray-950 hover:via-purple-300 to-purple-300 rounded-md flex items-center justify-center text-3xl font-bold">
-            Baccarat
+          <div className="relative w-60 h-80 transition-colors duration-500 ease-linear bg-gradient-to-br from-gray-950 via-gray-950 hover:via-purple-300 to-purple-300 rounded-md flex items-center justify-center text-3xl font-bold">
+            <img src="/src/assets/games/slot.webp" className="absolute w-48 h-48 z-10 opacity-10" />
+            <span className="z-20">Baccarat</span>
           </div>
-          <div className="w-60 h-80 transition-colors duration-500 ease-linear bg-gradient-to-br from-gray-950 via-gray-950 hover:via-pink-300 to-pink-300 rounded-md flex items-center justify-center text-3xl font-bold">
-            Sic Bo
+          <div className="relative w-60 h-80 transition-colors duration-500 ease-linear bg-gradient-to-br from-gray-950 via-gray-950 hover:via-pink-300 to-pink-300 rounded-md flex items-center justify-center text-3xl font-bold">
+            <img src="/src/assets/games/slot.webp" className="absolute w-48 h-48 z-10 opacity-10" />
+            <span className="z-20">Sic Bo</span>
           </div>
-          <div className="w-60 h-80 transition-colors duration-500 ease-linear bg-gradient-to-br from-gray-950 via-gray-950 hover:via-blue-300 to-blue-300 rounded-md flex items-center justify-center text-3xl font-bold">
-            Keno
+          <div className="relative w-60 h-80 transition-colors duration-500 ease-linear bg-gradient-to-br from-gray-950 via-gray-950 hover:via-blue-300 to-blue-300 rounded-md flex items-center justify-center text-3xl font-bold">
+            <img src="/src/assets/games/slot.webp" className="absolute w-48 h-48 z-10 opacity-10" />
+            <span className="z-20">Keno</span>
           </div>
-          <div className="w-60 h-80 transition-colors duration-500 ease-linear bg-gradient-to-br from-gray-950 via-gray-950 hover:via-orange-300 to-orange-300 rounded-md flex items-center justify-center text-3xl font-bold">
-            Pai Gow
+          <div className="relative w-60 h-80 transition-colors duration-500 ease-linear bg-gradient-to-br from-gray-950 via-gray-950 hover:via-orange-300 to-orange-300 rounded-md flex items-center justify-center text-3xl font-bold">
+            <img src="/src/assets/games/slot.webp" className="absolute w-48 h-48 z-10 opacity-10" />
+            <span className="z-20">Pai Gow</span>
           </div>
-          <div className="w-60 h-80 transition-colors duration-500 ease-linear bg-gradient-to-br from-gray-950 via-gray-950 hover:via-lime-300 to-lime-300 rounded-md flex items-center justify-center text-3xl font-bold">
-            Big Six Wheel
+          <div className="relative w-60 h-80 transition-colors duration-500 ease-linear bg-gradient-to-br from-gray-950 via-gray-950 hover:via-lime-300 to-lime-300 rounded-md flex items-center justify-center text-3xl font-bold">
+            <img src="/src/assets/games/slot.webp" className="absolute w-48 h-48 z-10 opacity-10" />
+            <span className="z-20">Big Six Wheel</span>
           </div>
-          <div className="w-60 h-80 transition-colors duration-500 ease-linear bg-gradient-to-br from-gray-950 via-gray-950 hover:via-teal-300 to-teal-300 rounded-md flex items-center justify-center text-3xl font-bold">
-            Video Poker
+          <div className="relative w-60 h-80 transition-colors duration-500 ease-linear bg-gradient-to-br from-gray-950 via-gray-950 hover:via-teal-300 to-teal-300 rounded-md flex items-center justify-center text-3xl font-bold">
+            <img src="/src/assets/games/slot.webp" className="absolute w-48 h-48 z-10 opacity-10" />
+            <span className="z-20">Video Poker</span>
           </div>
-          <div className="w-60 h-80 transition-colors duration-500 ease-linear bg-gradient-to-br from-gray-950 via-gray-950 hover:via-amber-300 to-amber-300 rounded-md flex items-center justify-center text-3xl font-bold">
-            Red Dog
+          <div className="relative w-60 h-80 transition-colors duration-500 ease-linear bg-gradient-to-br from-gray-950 via-gray-950 hover:via-amber-300 to-amber-300 rounded-md flex items-center justify-center text-3xl font-bold">
+            <img src="/src/assets/games/slot.webp" className="absolute w-48 h-48 z-10 opacity-10" />
+            <span className="z-20">Red Dog</span>
           </div>
-          <div className="w-60 h-80 transition-colors duration-500 ease-linear bg-gradient-to-br from-gray-950 via-gray-950 hover:via-gray-300 to-gray-300 rounded-md flex items-center justify-center text-3xl font-bold">
-            Casino War
+          <div className="relative w-60 h-80 transition-colors duration-500 ease-linear bg-gradient-to-br from-gray-950 via-gray-950 hover:via-gray-300 to-gray-300 rounded-md flex items-center justify-center text-3xl font-bold">
+            <img src="/src/assets/games/slot.webp" className="absolute w-48 h-48 z-10 opacity-10" />
+            <span className="z-20">Casino War</span>
           </div>
         </div>
       </div>

@@ -1,4 +1,5 @@
 import React from "react";
+import Footer from "../components/Footer";
 
 const aboutSections = [
   {
@@ -17,7 +18,7 @@ const aboutSections = [
 
 const About: React.FC = () => {
   return (
-    <div className="w-screen h-screen p-8 pt-28 bg-gradient-to-br bg-gray-900 via-gray-900 to-green-800 ">
+    <div className="w-screen h-max p-8 pt-28 bg-gradient-to-br bg-gray-900 via-gray-900 to-green-800 ">
       <div className="mb-12 text-center">
         <h1 className="text-4xl font-black text-white mb-4">Who we are?</h1>
         <p className="text-lg text-zinc-400">Discover our platform and enjoy live betting games!</p>
@@ -45,6 +46,8 @@ const About: React.FC = () => {
           </div>
         ))}
       </div>
+
+      <Footer />
     </div>
   );
 };
