@@ -1,4 +1,4 @@
-import React, { createContext, useContext, useState, useEffect, type ReactNode } from "react";
+import { createContext, useContext, useState, type ReactNode } from "react";
 import { FaRegCircleCheck } from "react-icons/fa6";
 import { AiOutlineExclamationCircle } from "react-icons/ai";
 import { FaRegCircleQuestion } from "react-icons/fa6";
