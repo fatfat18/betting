@@ -26,7 +26,7 @@ const tasks = [
 
 const Rewards: React.FC = () => {
   return (
-    <div className="p-8 pt-60 bg-gradient-to-br from-gray-900 via-gray-900 to-green-800 min-h-screen h-max w-screen ">
+    <div className="p-8 pt-60 bg-gradient-to-br from-gray-900 via-gray-900 to-green-800 min-h-screen h-max w-screen font-host ">
       <div className="flex items-center justify-center h-full">
         <div className="w-1/2 px-10 flex flex-col items-center justify-center h-full ">
           <div className="mt-10 text-center">
@@ -35,7 +35,7 @@ const Rewards: React.FC = () => {
           </div>
           <div className="flex w-full gap-4 flex-col ">
             {tasks.map((task) => (
-              <div key={task.name} className="bg-gray-800 rounded-xl shadow-md w-full p-6 flex items-center justify-between">
+              <div key={task.name} className="bg-gray-800 rounded-xl shadow-md w-full p-12 flex items-center justify-between">
                 <div>
                   <h3 className="text-xl font-semibold text-green-400">{task.name}</h3>
                   <p className="text-gray-300">{task.description}</p>

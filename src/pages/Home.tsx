@@ -67,7 +67,7 @@ const Home: React.FC = () => {
         </div>
         <div className="w-[60%] flex h-full items-center justify-center relative  ">
           <img src="/src/assets/home/home.png" alt="Logo" className=" h-[40rem] z-20 absolute -rotate-12" />
-          <img src="/src/assets/home/home3.webp" alt="Logo" className=" h-[30rem] z-20 absolute bottom-10 right-0 " />
+          <img src="/src/assets/home/home3.webp" alt="Logo" className=" h-[30rem] z-20 absolute bottom-10 xl:right-80 md:right-0 " />
           <img src="/src/assets/home/home4.webp" alt="Logo" className=" h-[30rem] z-20 absolute bottom-0 left-80 " />
         </div>
       </div>

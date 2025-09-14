@@ -13,7 +13,7 @@ type NavItem = {
 const navItems: NavItem[] = [
   { label: "Home", path: UNAUTH_ROUTES.HOME },
   { label: "Games", path: UNAUTH_ROUTES.GAMES },
-  { label: "Live", path: UNAUTH_ROUTES.LIVE },
+  { label: "Live Winners", path: UNAUTH_ROUTES.LIVE },
   { label: "Rewards", path: UNAUTH_ROUTES.REWARDS },
   { label: "About", path: UNAUTH_ROUTES.ABOUT },
   // { label: "Login", path: UNAUTH_ROUTES.LOGIN },
@@ -40,7 +40,7 @@ const Navbar: React.FC = () => {
               location.pathname === item.path ? " text-white  font-black" : "text-gray-300 hover:bg-gray-950 hover:text-white"
             }`}
           >
-            {item?.label === "Live" && <GoDotFill className=" text-red-600 mr-1 animate-pulse" />}
+            {item?.label === "Live Winners" && <GoDotFill className=" text-red-600 mr-1 animate-pulse" />}
             {item.label}
           </Link>
         ))}

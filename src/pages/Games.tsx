@@ -46,68 +46,65 @@ const Games: React.FC = () => (
         Popular Card Games
       </div>
 
-      <div className="w-full overflow-x-auto ">
-        <div className="w-max h-full flex gap-6">
-          <div className="relative w-60 h-80 transition-colors duration-500 bg-radial to-black hover:via-black from-amber-900 rounded-md flex items-center justify-center text-3xl font-bold">
-            <img src="/src/assets/games/cards.png" className="absolute w-48 h-48 z-10 opacity-10" />
-            <span className="z-20">Poker</span>
-          </div>
-          <div className="relative w-60 h-80 transition-colors duration-500 bg-radial to-black hover:via-black from-green-900 rounded-md flex items-center justify-center text-3xl font-bold">
-            <img src="/src/assets/games/cards.png" className="absolute w-48 h-48 z-10 opacity-10" />
-            <span className="z-20">Blackjack</span>
-          </div>
-          <div className="relative w-60 h-80 transition-colors duration-500 bg-radial to-black hover:via-black from-purple-900 rounded-md flex items-center justify-center text-3xl font-bold">
-            <img src="/src/assets/games/cards.png" className="absolute w-48 h-48 z-10 opacity-10" />
-            <span className="z-20">Baccarat</span>
-          </div>
-          <div className="relative w-60 h-80 transition-colors duration-500 bg-radial to-black hover:via-black from-blue-900 rounded-md flex items-center justify-center text-3xl font-bold">
-            <img src="/src/assets/games/cards.png" className="absolute w-48 h-48 z-10 opacity-10" />
-            <span className="z-20">Solitaire</span>
-          </div>
-          <div className="relative w-60 h-80 transition-colors duration-500 bg-radial to-black hover:via-black from-pink-900 rounded-md flex items-center justify-center text-3xl font-bold">
-            <img src="/src/assets/games/cards.png" className="absolute w-48 h-48 z-10 opacity-10" />
-            <span className="z-20">Rummy</span>
-          </div>
-          <div className="relative w-60 h-80 transition-colors duration-500 bg-radial to-black hover:via-black from-red-900 rounded-md flex items-center justify-center text-3xl font-bold">
-            <img src="/src/assets/games/cards.png" className="absolute w-48 h-48 z-10 opacity-10" />
-            <span className="z-20">Bridge</span>
-          </div>
-          <div className="relative w-60 h-80 transition-colors duration-500 bg-radial to-black hover:via-black from-cyan-900 rounded-md flex items-center justify-center text-3xl font-bold">
-            <img src="/src/assets/games/cards.png" className="absolute w-48 h-48 z-10 opacity-10" />
-            <span className="z-20">Hearts</span>
-          </div>
-          <div className="relative w-60 h-80 transition-colors duration-500 bg-radial to-black hover:via-black from-lime-900 rounded-md flex items-center justify-center text-3xl font-bold">
-            <img src="/src/assets/games/cards.png" className="absolute w-48 h-48 z-10 opacity-10" />
-            <span className="z-20">Spades</span>
-          </div>
-          <div className="relative w-60 h-80 transition-colors duration-500 bg-radial to-black hover:via-black from-teal-900 rounded-md flex items-center justify-center text-3xl font-bold">
-            <img src="/src/assets/games/cards.png" className="absolute w-48 h-48 z-10 opacity-10" />
-            <span className="z-20">Euchre</span>
-          </div>
-          <div className="relative w-60 h-80 transition-colors duration-500 bg-radial to-black hover:via-black from-orange-900 rounded-md flex items-center justify-center text-3xl font-bold">
-            <img src="/src/assets/games/cards.png" className="absolute w-48 h-48 z-10 opacity-10" />
-            <span className="z-20">Go Fish</span>
-          </div>
-          <div className="relative w-60 h-80 transition-colors duration-500 bg-radial to-black hover:via-black from-yellow-900 rounded-md flex items-center justify-center text-3xl font-bold">
-            <img src="/src/assets/games/cards.png" className="absolute w-48 h-48 z-10 opacity-10" />
-            <span className="z-20">Crazy Eights</span>
-          </div>
-          <div className="relative w-60 h-80 transition-colors duration-500 bg-radial to-black hover:via-black from-gray-900 rounded-md flex items-center justify-center text-3xl font-bold">
-            <img src="/src/assets/games/cards.png" className="absolute w-48 h-48 z-10 opacity-10" />
-            <span className="z-20">War</span>
-          </div>
+      <div className="flex gap-10 flex-wrap items-center ">
+        <div className="relative w-80 h-96 transition-colors duration-500 bg-radial to-black hover:via-black from-amber-900 rounded-md flex items-center justify-center text-3xl font-bold">
+          <img src="/src/assets/games/cards.png" className="absolute w-48 h-48 z-10 opacity-10" />
+          <span className="z-20">Poker</span>
+        </div>
+        <div className="relative w-80 h-96 transition-colors duration-500 bg-radial to-black hover:via-black from-green-900 rounded-md flex items-center justify-center text-3xl font-bold">
+          <img src="/src/assets/games/cards.png" className="absolute w-48 h-48 z-10 opacity-10" />
+          <span className="z-20">Blackjack</span>
+        </div>
+        <div className="relative w-80 h-96 transition-colors duration-500 bg-radial to-black hover:via-black from-purple-900 rounded-md flex items-center justify-center text-3xl font-bold">
+          <img src="/src/assets/games/cards.png" className="absolute w-48 h-48 z-10 opacity-10" />
+          <span className="z-20">Baccarat</span>
+        </div>
+        <div className="relative w-80 h-96 transition-colors duration-500 bg-radial to-black hover:via-black from-blue-900 rounded-md flex items-center justify-center text-3xl font-bold">
+          <img src="/src/assets/games/cards.png" className="absolute w-48 h-48 z-10 opacity-10" />
+          <span className="z-20">Solitaire</span>
+        </div>
+        <div className="relative w-80 h-96 transition-colors duration-500 bg-radial to-black hover:via-black from-pink-900 rounded-md flex items-center justify-center text-3xl font-bold">
+          <img src="/src/assets/games/cards.png" className="absolute w-48 h-48 z-10 opacity-10" />
+          <span className="z-20">Rummy</span>
+        </div>
+        <div className="relative w-80 h-96 transition-colors duration-500 bg-radial to-black hover:via-black from-red-900 rounded-md flex items-center justify-center text-3xl font-bold">
+          <img src="/src/assets/games/cards.png" className="absolute w-48 h-48 z-10 opacity-10" />
+          <span className="z-20">Bridge</span>
+        </div>
+        <div className="relative w-80 h-96 transition-colors duration-500 bg-radial to-black hover:via-black from-cyan-900 rounded-md flex items-center justify-center text-3xl font-bold">
+          <img src="/src/assets/games/cards.png" className="absolute w-48 h-48 z-10 opacity-10" />
+          <span className="z-20">Hearts</span>
+        </div>
+        <div className="relative w-80 h-96 transition-colors duration-500 bg-radial to-black hover:via-black from-lime-900 rounded-md flex items-center justify-center text-3xl font-bold">
+          <img src="/src/assets/games/cards.png" className="absolute w-48 h-48 z-10 opacity-10" />
+          <span className="z-20">Spades</span>
+        </div>
+        <div className="relative w-80 h-96 transition-colors duration-500 bg-radial to-black hover:via-black from-teal-900 rounded-md flex items-center justify-center text-3xl font-bold">
+          <img src="/src/assets/games/cards.png" className="absolute w-48 h-48 z-10 opacity-10" />
+          <span className="z-20">Euchre</span>
+        </div>
+        <div className="relative w-80 h-96 transition-colors duration-500 bg-radial to-black hover:via-black from-orange-900 rounded-md flex items-center justify-center text-3xl font-bold">
+          <img src="/src/assets/games/cards.png" className="absolute w-48 h-48 z-10 opacity-10" />
+          <span className="z-20">Go Fish</span>
+        </div>
+        <div className="relative w-80 h-96 transition-colors duration-500 bg-radial to-black hover:via-black from-yellow-900 rounded-md flex items-center justify-center text-3xl font-bold">
+          <img src="/src/assets/games/cards.png" className="absolute w-48 h-48 z-10 opacity-10" />
+          <span className="z-20">Crazy Eights</span>
+        </div>
+        <div className="relative w-80 h-96 transition-colors duration-500 bg-radial to-black hover:via-black from-gray-900 rounded-md flex items-center justify-center text-3xl font-bold">
+          <img src="/src/assets/games/cards.png" className="absolute w-48 h-48 z-10 opacity-10" />
+          <span className="z-20">War</span>
         </div>
       </div>
     </div>
 
-    <div className="w-full mt-12">
-      <div className="text-2xl flex gap-2 items-center text-start font-extrabold text-white mb-4 w-full">
-        <FaFootballBall />
-        Popular Sports
-      </div>
-
-      <div className="w-full overflow-x-auto ">
-        <div className="w-max h-full flex gap-6">
+    <div className="flex">
+      <div className="w-1/2 mt-12">
+        <div className="text-2xl flex gap-2 items-center text-start font-extrabold text-white mb-4 w-full">
+          <FaFootballBall />
+          Popular Sports
+        </div>
+        <div className="w-full flex flex-wrap gap-8 ">
           <div className="relative w-60 h-80 transition-colors duration-500 ease-linear bg-gradient-to-b from-gray-950 via-gray-950 hover:via-amber-500 to-amber-500 rounded-md flex items-center justify-center text-3xl font-bold">
             <img src="/src/assets/games/soccer.webp" className="absolute w-48 h-48 z-10 opacity-10" />
             <span className="z-20">Football</span>
@@ -156,18 +153,16 @@ const Games: React.FC = () => (
             <img src="/src/assets/games/soccer.webp" className="absolute w-48 h-48 z-10 opacity-10" />
             <span className="z-20">Horse Racing</span>
           </div>
+        </div>{" "}
+      </div>
+
+      <div className="w-1/2 mt-12">
+        <div className="text-2xl flex gap-2 items-center text-start font-extrabold text-white mb-4 w-full">
+          <PiPokerChipBold />
+          Popular Casino Games
         </div>
-      </div>
-    </div>
 
-    <div className="w-full mt-12">
-      <div className="text-2xl flex gap-2 items-center text-start font-extrabold text-white mb-4 w-full">
-        <PiPokerChipBold />
-        Popular Casino Games
-      </div>
-
-      <div className="w-full overflow-x-auto ">
-        <div className="w-max h-full flex gap-6">
+        <div className="w-full flex flex-wrap gap-8 ">
           <div className="relative w-60 h-80 transition-colors duration-500 ease-linear bg-gradient-to-br from-gray-950 via-gray-950 hover:via-cyan-300 to-cyan-300 rounded-md flex items-center justify-center text-3xl font-bold">
             <img src="/src/assets/games/slot.webp" className="absolute w-48 h-48 z-10 opacity-10" />
             <span className="z-20">Slots</span>
