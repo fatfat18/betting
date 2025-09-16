@@ -34,7 +34,13 @@ const users = [
 
 const Live: React.FC = () => {
   // Pass user id to the hook
-  const userValues = users.map((user, idx) => useIncrementingValue(user.id, 0, 1000 + idx * 500));
+  const userValues: number[] = [
+    useIncrementingValue(users[0].id, 0, 1000),
+    useIncrementingValue(users[1].id, 0, 1500),
+    useIncrementingValue(users[2].id, 0, 2000),
+    useIncrementingValue(users[3].id, 0, 2500),
+    useIncrementingValue(users[4].id, 0, 3000),
+  ];
 
   return (
     <div className="font-host p-8 pt-32 w-screen min-h-screen h-full bg-gradient-to-br from-gray-900 via-gray-900 to-green-800 ">
