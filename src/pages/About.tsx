@@ -26,15 +26,15 @@ const About: React.FC = () => {
       <div className="flex justify-center  w-full  ">
         <div className="flex items-center justify-center  w-full h-full">
           {" "}
-          <img src="/src/assets/about/about-2.png" className="w-[20rem] h-[20rem] -rotate-30" />
+          <img src="/assets/about/about-2.png" className="w-[20rem] h-[20rem] -rotate-30" />
         </div>{" "}
         <div className="flex items-center justify-center  w-full h-full">
           {" "}
-          <img src="/src/assets/about/about-1.png" className="w-[30rem] h-[30rem]" />
+          <img src="/assets/about/about-1.png" className="w-[30rem] h-[30rem]" />
         </div>{" "}
         <div className="flex items-center justify-center  w-full h-full">
           {" "}
-          <img src="/src/assets/about/about-2.png" className="w-[20rem] h-[20rem] rotate-30" />
+          <img src="/assets/about/about-2.png" className="w-[20rem] h-[20rem] rotate-30" />
         </div>{" "}
       </div>
 

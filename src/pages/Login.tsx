@@ -74,19 +74,19 @@ const Login: React.FC = () => {
       <div className="overflow-hidden font-host min-h-screen bg-gradient-to-br from-gray-900 via-gray-900 to-green-800 flex items-center justify-center">
         <div className="w-2/3 h-screen flex items-center justify-center p-20 relative ">
           <div className="absolute top-10 left-20 ">
-            <img src="/src/assets/login/1.webp" alt="Logo" className=" w-h-80 h-80 -rotate-[15deg] " />
+            <img src="/assets/login/1.webp" alt="Logo" className=" w-h-80 h-80 -rotate-[15deg] " />
           </div>
 
           <div className="absolute top-10 right-10 ">
-            <img src="/src/assets/login/2.webp" alt="Logo" className=" w-80 h-80 rotate-[15deg] " />
+            <img src="/assets/login/2.webp" alt="Logo" className=" w-80 h-80 rotate-[15deg] " />
           </div>
 
           <div className="absolute bottom-10 left-0 ">
-            <img src="/src/assets/login/3.png" alt="Logo" className=" w-96 h-96 -rotate-[15deg] " />
+            <img src="/assets/login/3.png" alt="Logo" className=" w-96 h-96 -rotate-[15deg] " />
           </div>
 
           <div className="absolute bottom-10 right-10 ">
-            <img src="/src/assets/login/4.webp" alt="Logo" className=" w-96 h-96 -rotate-[15deg] " />
+            <img src="/assets/login/4.webp" alt="Logo" className=" w-96 h-96 -rotate-[15deg] " />
           </div>
 
           <div className=" w-1/2 bg-white bg-opacity-95 rounded-xl shadow-2xl p-12 py-16 z-10">

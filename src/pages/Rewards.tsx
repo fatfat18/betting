@@ -48,7 +48,7 @@ const Rewards: React.FC = () => {
           </div>
         </div>
         <div className="w-1/2 h-full flex items-center justify-center">
-          <img src="/src/assets/rewards/rewards-1.webp" alt="Rewards" className="w-[38rem] h-[30rem]" />
+          <img src="/assets/rewards/rewards-1.webp" alt="Rewards" className="w-[38rem] h-[30rem]" />
         </div>
       </div>
       <Footer />

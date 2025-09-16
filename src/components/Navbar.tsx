@@ -27,7 +27,7 @@ const Navbar: React.FC = () => {
   return (
     <div className="h-24 px-8 flex gap-6  items-center font-host">
       <div className="w-1/6 flex items-center justify-center font-black text-3xl  ">
-        <img src="/src/assets/home/logo_new_betting.webp" alt="Logo" className="h-16 mr-2" />
+        <img src="/assets/home/logo_new_betting.webp" alt="Logo" className="h-16 mr-2" />
         ETHXpert
       </div>
       <div className="w-4/6 flex gap-2 items-center justify-center">

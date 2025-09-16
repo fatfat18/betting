@@ -36,7 +36,7 @@ const Home: React.FC = () => {
     <>
       {/* SECTION1 */}
       <div className="w-screen h-screen overflow-x-hidden font-host bg-gradient-to-br from-gray-900 via-gray-900 to-green-800 flex  items-center justify-center text-white  relative overflow-hidden">
-        <img src="/src/assets/home/home2.webp" alt="Logo" className=" -left-[10rem] bottom-10 h-[50rem] blur-2xl absolute z-10 opacity-50 " />
+        <img src="/assets/home/home2.webp" alt="Logo" className=" -left-[10rem] bottom-10 h-[50rem] blur-2xl absolute z-10 opacity-50 " />
 
         <div className="w-[40%]  flex flex-col gap-4 h-full  justify-center text-start pl-16 z-20">
           <div className="text-7xl font-black">Ready to turn your luck into fortune?</div>
@@ -66,9 +66,9 @@ const Home: React.FC = () => {
           </div>
         </div>
         <div className="w-[60%] flex h-full items-center justify-center relative  ">
-          <img src="/src/assets/home/home.png" alt="Logo" className=" h-[40rem] z-20 absolute -rotate-12" />
-          <img src="/src/assets/home/home3.webp" alt="Logo" className=" h-[30rem] z-20 absolute bottom-10 xl:right-80 md:right-0 " />
-          <img src="/src/assets/home/home4.webp" alt="Logo" className=" h-[30rem] z-20 absolute bottom-0 left-80 " />
+          <img src="/assets/home/home.png" alt="Logo" className=" h-[40rem] z-20 absolute -rotate-12" />
+          <img src="/assets/home/home3.webp" alt="Logo" className=" h-[30rem] z-20 absolute bottom-10 xl:right-80 md:right-0 " />
+          <img src="/assets/home/home4.webp" alt="Logo" className=" h-[30rem] z-20 absolute bottom-0 left-80 " />
         </div>
       </div>
 
@@ -95,7 +95,7 @@ const Home: React.FC = () => {
           </div>
         </div>
         <div className=" flex items-center justify-center top-0 left-0 w-full h-full  pointer-events-none select-none">
-          <img src="/src/assets/home/home5.webp" alt="Metrics Background" className="h-[35rem]" />
+          <img src="/assets/home/home5.webp" alt="Metrics Background" className="h-[35rem]" />
         </div>
       </div>
 

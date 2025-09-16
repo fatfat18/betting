@@ -25,11 +25,11 @@ function useIncrementingValue(id: number, initial: number = 0.0000089, interval:
 }
 
 const users = [
-  { id: 1, name: "EIAN13DAS", img: "/src/assets/live/1st.webp", country: "USA", betsPlaced: 120 },
-  { id: 2, name: "D1WDACCZ", img: "/src/assets/live/2nd.webp", country: "UK", betsPlaced: 98 },
-  { id: 3, name: "45ASDAC", img: "/src/assets/live/3rd.png", country: "Canada", betsPlaced: 85 },
-  { id: 4, name: "ASCAS33AFG", img: "/src/assets/live/4th.webp", country: "Germany", betsPlaced: 76 },
-  { id: 5, name: "IEYUT3WEQ", img: "/src/assets/live/5th.webp", country: "Australia", betsPlaced: 65 },
+  { id: 1, name: "EIAN13DAS", img: "/assets/live/1st.webp", country: "USA", betsPlaced: 120 },
+  { id: 2, name: "D1WDACCZ", img: "/assets/live/2nd.webp", country: "UK", betsPlaced: 98 },
+  { id: 3, name: "45ASDAC", img: "/assets/live/3rd.png", country: "Canada", betsPlaced: 85 },
+  { id: 4, name: "ASCAS33AFG", img: "/assets/live/4th.webp", country: "Germany", betsPlaced: 76 },
+  { id: 5, name: "IEYUT3WEQ", img: "/assets/live/5th.webp", country: "Australia", betsPlaced: 65 },
 ];
 
 const Live: React.FC = () => {
