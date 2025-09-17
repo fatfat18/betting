@@ -6,9 +6,10 @@ import Register from "./pages/Register";
 import Live from "./pages/Live";
 import About from "./pages/About";
 import Rewards from "./pages/Rewards";
+import CoinBomb from "./games/coin-bomb";
 import "./App.css";
 import Layout from "./layout/Layout";
-import { UNAUTH_ROUTES } from "./constants/routes.constants";
+import { UNAUTH_ROUTES, AUTH_ROUTES } from "./constants/routes.constants";
 
 function getRouteWithLayout(path: string, element: React.ReactNode) {
   return <Route key={path} path={path} element={<Layout>{element}</Layout>} />;
@@ -23,6 +24,8 @@ const routeConfig = [
 
   { path: UNAUTH_ROUTES.LOGIN, element: <Login /> },
   { path: UNAUTH_ROUTES.REGISTER, element: <Register /> },
+
+  { path: AUTH_ROUTES.GAMES.COIN_BOMB, element: <CoinBomb /> },
 ];
 
 function App() {
