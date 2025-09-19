@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react";
 
-function useIncrementingValue(id: number, initial: number = 0.0000089, interval: number = 1, maxIncrement: number = 0.0003) {
-  // Read from localStorage on mount
+function useIncrementingValue(id: number, initial: number = 0.00089, minInterval: number = 5000, maxInterval: number = 10000, maxIncrement: number = 0.003) {
   const getInitial = () => {
     const stored = localStorage.getItem(`userValue_${id}`);
     return stored ? parseFloat(stored) : initial;
@@ -10,16 +9,24 @@ function useIncrementingValue(id: number, initial: number = 0.0000089, interval:
   const [value, setValue] = useState(getInitial);
 
   useEffect(() => {
-    const timer = setInterval(() => {
-      setValue((v) => {
-        const increment = Math.random() * maxIncrement;
-        const newValue = parseFloat((v + increment).toFixed(8));
-        localStorage.setItem(`userValue_${id}`, newValue.toString());
-        return newValue;
-      });
-    }, interval);
-    return () => clearInterval(timer);
-  }, [interval, maxIncrement, id]);
+    let timer: ReturnType<typeof setTimeout>;
+
+    const scheduleNext = () => {
+      const interval = Math.floor(Math.random() * (maxInterval - minInterval + 1)) + minInterval;
+      timer = setTimeout(() => {
+        setValue((v) => {
+          const increment = Math.random() * maxIncrement;
+          const newValue = parseFloat((v + increment).toFixed(8));
+          localStorage.setItem(`userValue_${id}`, newValue.toString());
+          return newValue;
+        });
+        scheduleNext();
+      }, interval);
+    };
+
+    scheduleNext();
+    return () => clearTimeout(timer);
+  }, [minInterval, maxInterval, maxIncrement, id]);
 
   return value;
 }
@@ -51,7 +58,7 @@ const Live: React.FC = () => {
             <img src={users[0].img} alt="Live Winner" className="p-10 rounded-xl w-[30rem] h-[30rem] bg-gradient-to-tl from-white via-green-800 to-green-800" />
           </div>
           <div className="text-5xl text-center font-black mt-4">
-            Total Winnings in BTC <br />
+            Total Winnings in ETH <br />
             <div className="text-green-500 font-black mt-4"> {userValues[0]}</div>
           </div>
           <div className="mt-4 text-4xl font-bold text-white"> {users[0].name}</div>
@@ -72,7 +79,7 @@ const Live: React.FC = () => {
                 </div>
                 <img src={user.img} alt="Live Winner" className="p-4 rounded-xl w-[10rem] h-[10rem] " />
                 <div className="text-xl text-center font-black mt-2">
-                  Total Winnings in BTC <br />
+                  Total Winnings in ETH <br />
                   <strong className="text-green-500 font-black"> {userValues[idx + 1]}</strong>
                 </div>
                 <div className="mt-2 text-2xl  font-bold text-white">{user.name}</div>

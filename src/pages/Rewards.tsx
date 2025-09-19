@@ -4,23 +4,23 @@ import Footer from "../components/Footer";
 const tasks = [
   {
     name: "Verify Email",
-    description: "Verify your email address to earn 500 credits.",
-    credits: 500,
+    description: "Verify your email address to earn 50 credits.",
+    credits: 50,
   },
   {
     name: "Complete Profile",
-    description: "Fill out your profile to earn 800 credits.",
-    credits: 800,
+    description: "Fill out your profile to earn 100 credits.",
+    credits: 100,
   },
   {
     name: "First Deposit",
-    description: "Make your first deposit to earn 1700 credits.",
-    credits: 1700,
+    description: "Make your first deposit to earn 250 credits.",
+    credits: 250,
   },
   {
-    name: "Invite a friend to our Discord",
-    description: "Invite a friend and earn 1000 credits when they join.",
-    credits: 1000,
+    name: "Invite 5 friends to our Discord",
+    description: "Invite 5 friends and earn 500 credits when they join.",
+    credits: 500,
   },
 ];
 
