@@ -19,4 +19,5 @@ export const AUTH_ROUTES = {
     ROULETTE: "/games/roulette",
     BLACKJACK: "/games/blackjack",
   },
+  
 };
