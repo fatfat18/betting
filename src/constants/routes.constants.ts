@@ -11,6 +11,9 @@ export const UNAUTH_ROUTES = {
 
 export const AUTH_ROUTES = {
   DASHBOARD: "/dashboard",
+  CONTACT_SUPPORT: "/contact-support",
+  PLAY_GAMES: "/play-games",
+  BETTING: "/betting",
   PROFILE: "/profile",
   SETTINGS: "/settings",
   LOGOUT: "/logout",
@@ -19,5 +22,4 @@ export const AUTH_ROUTES = {
     ROULETTE: "/games/roulette",
     BLACKJACK: "/games/blackjack",
   },
-  
 };

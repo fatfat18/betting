@@ -11,7 +11,12 @@ import "./App.css";
 import Layout from "./layout/Layout";
 import AuthLayout from "./layout/AuthLayout";
 import { UNAUTH_ROUTES, AUTH_ROUTES } from "./constants/routes.constants";
-import Dashboard from "./pages/user/dashboard";
+import Dashboard from "./pages/user/Dashboard";
+import ContactSupport from "./pages/user/ContactSupport";
+import PlayGames from "./pages/user/PlayGames";
+import Betting from "./pages/user/Betting";
+import Profile from "./pages/user/Profile";
+import Settings from "./pages/user/Settings";
 
 const getRouteWithLayout = (path: string, element: React.ReactNode) => {
   return <Route key={path} path={path} element={<Layout>{element}</Layout>} />;
@@ -36,6 +41,11 @@ const authRouteConfig = [
   // Add authenticated routes here if needed in the future
   { path: AUTH_ROUTES.GAMES.COIN_BOMB, element: <CoinBomb /> },
   { path: AUTH_ROUTES.DASHBOARD, element: <Dashboard /> },
+  { path: AUTH_ROUTES.CONTACT_SUPPORT, element: <ContactSupport /> },
+  { path: AUTH_ROUTES.PLAY_GAMES, element: <PlayGames /> },
+  { path: AUTH_ROUTES.BETTING, element: <Betting /> },
+  { path: AUTH_ROUTES.PROFILE, element: <Profile /> },
+  { path: AUTH_ROUTES.SETTINGS, element: <Settings /> },
 ];
 
 function App() {
