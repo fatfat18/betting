@@ -32,6 +32,7 @@ const Login: React.FC = () => {
     onSubmit: (values) => {
       // Handle login logic here
       console.log("Logging in with", values);
+      navigate("/dashboard");
     },
   });
 
