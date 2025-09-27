@@ -1,11 +1,18 @@
-import React from "react";
+import React, { useState } from "react";
 import { HiOutlineCash } from "react-icons/hi";
 import { BarChart } from "@mui/x-charts";
 import { FaFootballBall } from "react-icons/fa";
 import { GiPokerHand } from "react-icons/gi";
 import { PiPokerChipBold } from "react-icons/pi";
+import Modal from "../../components/Modal";
+import Withdraw from "./components/Withdraw";
 
 const Dashboard: React.FC = () => {
+  const [balance, setBalance] = useState<number>(451262.5);
+  const [withdrawModal, setWithdrawModal] = useState<boolean>(false);
+  const handleWithdraw = () => {
+    setWithdrawModal((prev) => !prev);
+  };
   const games = [
     { id: 17, name: "Football", result: "Win", amount: 500, gameType: "sports" },
     { id: 3, name: "Baccarat", result: "Win", amount: 200, gameType: "casino" },
@@ -32,79 +39,102 @@ const Dashboard: React.FC = () => {
   ];
 
   return (
-    <div className="text-white font-host bg-gradient-to-br from-gray-900 via-gray-900 to-green-800 h-full w-full p-10 pt-0 ">
-      <div className="flex w-full h-full">
-        <div className="flex flex-col h-full w-3/4">
-          <div className="flex gap-4 p-2  items-center justify-center h-1/3 w-full ">
-            <div className="w-2/4 h-full rounded-3xl p-10 bg-gradient-to-tl from-gray-950 via-gray-950 to-green-800">
-              <p className="text-zinc-300 font-bold text-2xl ">Total Balance</p>
-              <p className="text-zinc-50 text-6xl font-black mt-2 ">$412,300.20</p>
-              <p className="text-zinc-500 text-bold text-sm mt-2">as of December 19,2025 at 11:48 PM</p>
-              <div className="w-full mt-6 flex items-center justify-end">
-                <button className="w-max py-3 px-6 border-2 border-green-800 text-green-800 hover:bg-green-700 cursor-pointer font-black hover:border-green-700 hover:text-white rounded-3xl">
-                  {" "}
-                  <HiOutlineCash className="inline-block" size={20} /> Withdraw
-                </button>
-              </div>
-            </div>
-            <div className="w-1/4 h-full rounded-3xl  p-10 bg-white">
-              <p className="text-zinc-300 font-bold text-base ">Today's Total Result</p>
-              <p className="text-gray-950 text-2xl font-black mt-2 ">$212,300.20</p>
-            </div>
-            <div className="w-1/4 h-full rounded-3xl  p-10 bg-white"></div>
-          </div>
-          <div className="flex  p-2  items-center justify-center h-2/3 w-full ">
-            <div className="w-full h-full flex flex-col items-center justify-center rounded-3xl p-6 bg-zinc-100 border-2 border-zinc-300">
-              <div className="w-full h-full pt-10">
-                <BarChart
-                  xAxis={[
-                    {
-                      data: Array.from({ length: 31 }, (_, i) => (i + 1).toString()), // Automatically generate days 1-31
-                      label: "Day of the Month",
-                    },
-                  ]}
-                  series={[
-                    {
-                      // data: [
-                      //   9312, 5412, 7231, 8123, 6543, 7890, 6123, 8456, 7321, 5912, 8120, 6789, 9541, 8234, 7123, 6345, 7891, 8123, 5412, 9312, 7231, 6543, 8456, 5912, 7890, 6789, 9541, 8234, 7123,
-                      //   6345, 7891,
-                      // ],
-
-                      data: [9312, 5412, 7231, 8123, 6543, 7890, 6123, 8456, 7321, 5912, 8120, 6789, 9541, 8234, 7123, 6345, 7891, 8123, 5412, 6789, 9541, 8234, 7123, 6345, 7891],
-                      color: "#016630", // Use a constant color for the series
-                      valueFormatter: (value) => `$ ${value}`,
-                    },
-                  ]}
-                  height={400}
-                />
-              </div>
-              <div className="text-center w-full text-5xl font-bold text-zinc-950">Monthly Statistics</div>
-            </div>
-          </div>
-        </div>
-        <div className="w-1/4 h-full p-2">
-          <div className="bg-white text-zinc-950  w-full h-full rounded-xl">
-            <p className="font-bold text-xl bg-gradient-to-br from-green-950 to-black text-white p-5  rounded-t-xl">Recent Games Played</p>
-
-            <div className=" h-[50rem] overflow-auto p-6 pt-0">
-              {games.map((game) => (
-                <div key={game.id} className="flex justify-between py-4 border-b border-zinc-200">
-                  <span className="text-zinc-700 font-semibold">
-                    {game.gameType === "sports" && <FaFootballBall className="inline-block mr-2" />}
-                    {game.gameType === "cards" && <GiPokerHand size={22} className="inline-block mr-2" />}
-                    {game.gameType === "casino" && <PiPokerChipBold size={22} className="inline-block mr-2" />}
-                    {game.name}
-                  </span>
-                  <span className={`font-black ${game.result === "Win" ? "text-green-600" : "text-red-600"}`}>
-                    {game.result} (${game.amount})
-                  </span>
+    <>
+      <Modal isOpen={withdrawModal} onClose={handleWithdraw} title={`Withdraw Funds`} width={"w-1/3 p-10"}>
+        <Withdraw onWithdraw={() => {}} balance={balance} />
+      </Modal>
+      <div className="text-white font-host bg-gradient-to-br from-gray-900 via-gray-900 to-green-800 h-full w-full p-10 pt-0 ">
+        <div className="flex w-full h-full">
+          <div className="flex flex-col h-full w-3/4">
+            <div className="flex gap-4 p-2  items-center justify-center h-1/3 w-full ">
+              <div className="w-2/4 h-full rounded-3xl p-10 bg-gradient-to-tl from-gray-950 via-gray-950 to-green-800">
+                <p className="text-zinc-300 font-bold text-2xl ">Total Balance</p>
+                <p className="text-zinc-50 text-6xl font-black mt-2 ">${balance.toLocaleString(undefined, { minimumFractionDigits: 2, maximumFractionDigits: 2 })}</p>
+                <p className="text-zinc-500 text-bold text-sm mt-2">as of December 19,2025 at 11:48 PM</p>
+                <div className="w-full mt-6 flex items-center justify-end">
+                  <button
+                    onClick={handleWithdraw}
+                    className="w-max py-3 px-6 border-2 border-green-800 text-green-800 hover:bg-green-700 cursor-pointer font-black hover:border-green-700 hover:text-white rounded-3xl"
+                  >
+                    {" "}
+                    <HiOutlineCash className="inline-block" size={20} /> Withdraw
+                  </button>
                 </div>
-              ))}
+              </div>
+              <div className="w-1/4 h-full rounded-3xl  p-10 bg-white overflow-clip relative">
+                <p className="text-zinc-500 font-bold text-base ">Today's Total Result</p>
+                <p className="text-gray-950 text-3xl font-black mt-2 ">$212,300.20</p>
+
+                <img src="/assets/games/soccer.webp" alt="Description" className="absolute w-full h-80 object-contain" />
+              </div>
+              <div className="w-1/4 h-full flex items-center  relative rounded-3xl  bg-gradient-to-tr from-gray-900 to-black  ">
+                <div className="z-20 w-2/3 pl-4 ">
+                  <strong className="text-2xl">
+                    Out of credits?
+                    <br />
+                  </strong>{" "}
+                  Invite people to gain more credits!
+                  <br />
+                  <button className="p-4 py-2 mt-8 text-sm font-black rounded-full bg-white border-white cursor-pointer border-2 text-gray-950 hover:bg-gray-950 hover:text-white">
+                    Invite Friends!
+                  </button>
+                </div>
+                <img src="/assets/home/beast.png" alt="Description" className="w-3/4 h-3/4 object-contain rounded-3xl absolute bottom-0 -right-10 z-10" />
+              </div>
+            </div>
+            <div className="flex  p-2  items-center justify-center h-2/3 w-full ">
+              <div className="w-full h-full flex flex-col items-center justify-center rounded-3xl p-6 bg-zinc-100 border-2 border-zinc-300">
+                <div className="w-full h-full pt-10">
+                  <BarChart
+                    xAxis={[
+                      {
+                        data: Array.from({ length: 31 }, (_, i) => (i + 1).toString()), // Automatically generate days 1-31
+                        label: "Day of the Month",
+                      },
+                    ]}
+                    series={[
+                      {
+                        // data: [
+                        //   9312, 5412, 7231, 8123, 6543, 7890, 6123, 8456, 7321, 5912, 8120, 6789, 9541, 8234, 7123, 6345, 7891, 8123, 5412, 9312, 7231, 6543, 8456, 5912, 7890, 6789, 9541, 8234, 7123,
+                        //   6345, 7891,
+                        // ],
+
+                        data: [9312, 5412, 7231, 8123, 6543, 7890, 6123, 8456, 7321, 5912, 8120, 6789, 9541, 8234, 7123, 6345, 7891, 8123, 5412, 6789, 9541, 8234, 7123, 6345, 7891],
+                        color: "#016630", // Use a constant color for the series
+                        valueFormatter: (value) => `$ ${value}`,
+                      },
+                    ]}
+                    height={400}
+                  />
+                </div>
+                <div className="text-center w-full text-5xl font-bold text-zinc-950">Monthly Statistics</div>
+              </div>
+            </div>
+          </div>
+          <div className="w-1/4 h-full p-2">
+            <div className="bg-white text-zinc-950  w-full h-full rounded-xl">
+              <p className="font-bold text-xl bg-gradient-to-br from-green-950 to-black text-white p-5  rounded-t-xl">Recent Games Played</p>
+
+              <div className=" h-[50rem] overflow-auto p-6 pt-0">
+                {games.map((game) => (
+                  <div key={game.id} className="flex justify-between py-4 border-b border-zinc-200">
+                    <span className="text-zinc-700 font-semibold">
+                      {game.gameType === "sports" && <FaFootballBall className="inline-block mr-2" />}
+                      {game.gameType === "cards" && <GiPokerHand size={22} className="inline-block mr-2" />}
+                      {game.gameType === "casino" && <PiPokerChipBold size={22} className="inline-block mr-2" />}
+                      {game.name}
+                    </span>
+                    <span className={`font-black ${game.result === "Win" ? "text-green-600" : "text-red-600"}`}>
+                      {game.result} (${game.amount})
+                    </span>
+                  </div>
+                ))}
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
+    </>
   );
 };
 
