@@ -20,6 +20,8 @@ import Settings from "./pages/user/Settings";
 
 import AdminDashboard from "./pages/FromBladeToReact/AdminDashboard";
 import GamesPage from "./pages/FromBladeToReact/GamesPages";
+import PlayGame from "./pages/FromBladeToReact/PlayGame";
+import PlayGameDemo from "./pages/FromBladeToReact/PlayGamesDemo";
 
 const getRouteWithLayout = (path: string, element: React.ReactNode) => {
   return <Route key={path} path={path} element={<Layout>{element}</Layout>} />;
@@ -54,6 +56,8 @@ const authRouteConfig = [
 const oldWebRouteConfig = [
   { path: OLD_WEB_ROUTES.ROOT, element: <AdminDashboard /> },
   { path: OLD_WEB_ROUTES.GAMES, element: <GamesPage /> },
+  { path: OLD_WEB_ROUTES.PLAY_GAME, element: <PlayGame /> },
+  { path: OLD_WEB_ROUTES.PLAY_GAME_DEMO, element: <PlayGameDemo /> },
 ];
 
 function App() {

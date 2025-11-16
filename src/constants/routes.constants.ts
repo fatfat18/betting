@@ -27,4 +27,6 @@ export const AUTH_ROUTES = {
 export const OLD_WEB_ROUTES = {
   ROOT: "old/dashboard",
   GAMES: "old/games",
+  PLAY_GAME: "old/play-game",
+  PLAY_GAME_DEMO: "old/play-game-demo",
 };

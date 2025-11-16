@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import AxiosConfig from "../../AxiosConfig";
+import { useNavigate } from "react-router-dom";
 
 interface Game {
   name: string;
@@ -26,11 +27,12 @@ interface GameListProps {
 }
 
 const GamesPage: React.FC<GameListProps> = ({ category1, cat1 }) => {
+  const navigate = useNavigate();
   const [loading, setLoading] = useState(true);
   const [games, setGames] = useState<Game[]>([]);
   const [paginationLinks, setPaginationLinks] = useState<Link[]>([]);
   const [user, setUser] = useState<User>({
-    username: "demo_user",
+    username: "",
     balance: 400,
   });
 
@@ -47,6 +49,14 @@ const GamesPage: React.FC<GameListProps> = ({ category1, cat1 }) => {
     } finally {
       setLoading(false);
     }
+  };
+
+  const handlePlayGame = (gameName: string) => {
+    navigate(`/old/play-game`, { state: { gameName } });
+  };
+
+  const handlePlayGameDemo = (gameName: string) => {
+    navigate(`/old/play-game-demo`, { state: { gameName } });
   };
 
   useEffect(() => {
@@ -84,21 +94,24 @@ const GamesPage: React.FC<GameListProps> = ({ category1, cat1 }) => {
                   <div className="text-center space-y-2">
                     {user?.username ? (
                       user.balance && user.balance > 0 ? (
-                        <a
-                          href={`/frontend/game/go/${game.name}?api_exit=/`}
-                          className="bg-gradient-to-bl from-green-950 to-gray-950 hover:from-green-800 hover:to-gray-800 text-white font-semibold py-2 px-4 rounded transition-colors duration-200"
+                        <button
+                          onClick={() => handlePlayGame(game.name)}
+                          className="bg-gradient-to-bl cursor-pointer from-green-950 to-gray-950 hover:from-green-800 hover:to-gray-800 text-white font-semibold py-2 px-4 rounded transition-colors duration-200"
                         >
                           Play Now
-                        </a>
+                        </button>
                       ) : (
                         <a href="#" className="bg-green-600 hover:bg-green-700 text-white font-semibold py-2 px-4 rounded transition-colors duration-200">
                           Deposit Funds
                         </a>
                       )
                     ) : (
-                      <a href={`/frontend/game/go/${game.name}/prego?api_exit=/`} className="bg-blue-400 hover:bg-blue-500 text-white font-semibold py-2 px-4 rounded transition-colors duration-200">
+                      <button
+                        onClick={() => handlePlayGameDemo(game.name)}
+                        className="cursor-pointer bg-blue-400 hover:bg-blue-500 text-white font-semibold py-2 px-4 rounded transition-colors duration-200"
+                      >
                         Demo
-                      </a>
+                      </button>
                     )}
                   </div>
                 </div>
