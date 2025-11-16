@@ -10,13 +10,16 @@ import CoinBomb from "./games/coin-bomb";
 import "./App.css";
 import Layout from "./layout/Layout";
 import AuthLayout from "./layout/AuthLayout";
-import { UNAUTH_ROUTES, AUTH_ROUTES } from "./constants/routes.constants";
+import { UNAUTH_ROUTES, AUTH_ROUTES, OLD_WEB_ROUTES } from "./constants/routes.constants";
 import Dashboard from "./pages/user/Dashboard";
 import ContactSupport from "./pages/user/ContactSupport";
 import PlayGames from "./pages/user/PlayGames";
 import Betting from "./pages/user/Betting";
 import Profile from "./pages/user/Profile";
 import Settings from "./pages/user/Settings";
+
+import AdminDashboard from "./pages/FromBladeToReact/AdminDashboard";
+import GamesPage from "./pages/FromBladeToReact/GamesPages";
 
 const getRouteWithLayout = (path: string, element: React.ReactNode) => {
   return <Route key={path} path={path} element={<Layout>{element}</Layout>} />;
@@ -48,12 +51,20 @@ const authRouteConfig = [
   { path: AUTH_ROUTES.SETTINGS, element: <Settings /> },
 ];
 
+const oldWebRouteConfig = [
+  { path: OLD_WEB_ROUTES.ROOT, element: <AdminDashboard /> },
+  { path: OLD_WEB_ROUTES.GAMES, element: <GamesPage /> },
+];
+
 function App() {
   return (
     <Router>
       <Routes>
         {routeConfig.map(({ path, element }) => getRouteWithLayout(path, element))}
         {authRouteConfig.map(({ path, element }) => getAuthRouteWithLayout(path, element))}
+        {oldWebRouteConfig.map(({ path, element }) => (
+          <Route key={path} path={path} element={element} />
+        ))}
         <Route path={UNAUTH_ROUTES.ROOT} element={<Navigate to={UNAUTH_ROUTES.HOME} replace />} />
       </Routes>
     </Router>

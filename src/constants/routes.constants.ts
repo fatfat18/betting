@@ -23,3 +23,8 @@ export const AUTH_ROUTES = {
     BLACKJACK: "/games/blackjack",
   },
 };
+
+export const OLD_WEB_ROUTES = {
+  ROOT: "old/dashboard",
+  GAMES: "old/games",
+};
